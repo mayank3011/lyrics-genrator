@@ -3,7 +3,7 @@ from lyrics_extractor import SongLyrics
  
 
 def get_lyrics():
-    extract_lyrics = SongLyrics("AIzaSyAYesmcC66_NvWhDbbFurx1IP0ovNUintA","3a5e3982a89326de3") 
+    extract_lyrics = SongLyrics("GCS_API_KEY", "GCS_ENGINE_KEY")
     temp=extract_lyrics.get_lyrics(str(e.get()))
     res=temp['lyrics']
     result.set(res)
